@@ -1,6 +1,6 @@
 """Tests for calculator operations."""
 import pytest
-from src.calculator import add, subtract, multiply, divide
+from src.calculator import add, subtract, multiply, divide, square_root
 
 def test_add():
     assert add(2, 3) == 5
@@ -21,3 +21,12 @@ def test_divide():
 def test_divide_by_zero():
     with pytest.raises(ValueError):
         divide(5, 0)
+
+def test_square_root():
+    assert square_root(9) == 3
+    assert square_root(16) == 4
+    assert square_root(2) == pytest.approx(1.414, rel=0.01)
+
+def test_square_root_negative():
+    with pytest.raises(ValueError):
+        square_root(-1)
