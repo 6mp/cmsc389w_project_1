@@ -3,22 +3,38 @@ import math
 
 def add(a, b):
     """Add two numbers."""
-    return a + b
+    print(f"[DEBUG] Adding {a} + {b}")
+    result = a + b
+    print(f"[DEBUG] Result: {result}")
+    return result
 
 def subtract(a, b):
     """Subtract b from a."""
-    return a - b
+    print(f"[DEBUG] Subtracting {a} - {b}")
+    result = a - b
+    print(f"[DEBUG] Result: {result}")
+    return result
 
 def multiply(a, b):
     """Multiply two numbers."""
-    return a * b
+    print(f"[DEBUG] Multiplying {a} * {b}")
+    result = a * b
+    print(f"[DEBUG] Result: {result}")
+    return result
 
 def divide(a, b):
     """Divide a by b."""
-    return a / b
+    print(f"[DEBUG] Dividing {a} / {b}")
+    result = a / b
+    print(f"[DEBUG] Result: {result}")
+    return result
 
 def square_root(a):
     """Calculate square root of a."""
+    print(f"[DEBUG] Square root of {a}")
     if a < 0:
+        print(f"[DEBUG] Error: Negative number!")
         raise ValueError("Cannot calculate square root of negative number")
-    return math.sqrt(a)
+    result = math.sqrt(a)
+    print(f"[DEBUG] Result: {result}")
+    return result
