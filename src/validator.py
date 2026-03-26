@@ -1,3 +1,5 @@
+"""Contains functions that will validate numerical inputs for the calculator."""
+
 def validate_number(value):
     """Validate that value can be converted to a number."""
     try:
