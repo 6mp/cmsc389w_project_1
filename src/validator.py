@@ -24,4 +24,4 @@ def validate_non_negative(n):
 def is_positive(n):
     """Check if a number is positive."""
     return n > 0
-7c72d79 (Add is_positive helper function)
+
