@@ -25,3 +25,5 @@ def square_root(a):
     if a < 0:
         raise ValueError("Cannot calculate square root of negative number")
     return math.sqrt(a)
+
+# Experimenting time!
