@@ -1,4 +1,5 @@
 """Calculator module with arithmetic operations."""
+# Experimental feature: consider adding power operation
 
 def add(a, b):
     """Add two numbers."""
