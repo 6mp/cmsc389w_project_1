@@ -1,5 +1,7 @@
 """Calculator module with arithmetic operations."""
 # Experimental feature: consider adding power operation
+"""Basic calculator operations."""
+import math
 
 def add(a, b):
     """Add two numbers."""
@@ -24,3 +26,13 @@ def modulo(a, b):
     if b == 0:
         raise ValueError("Cannot modulo by zero")
     return a % b
+    result = a / b
+    return result
+
+def square_root(a):
+    """Calculate square root of a."""
+    if a < 0:
+        raise ValueError("Cannot calculate square root of negative number")
+    return math.sqrt(a)
+
+# Experimenting time!
