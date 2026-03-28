@@ -1,3 +1,5 @@
+"""Calculator module with arithmetic operations."""
+# Experimental feature: consider adding power operation
 """Basic calculator operations."""
 import math
 
@@ -17,6 +19,13 @@ def divide(a, b):
     """Divide a by b."""
     if b == 0:
         raise ValueError("Cannot divide by zero")
+    return a / b
+
+def modulo(a, b):
+    """Return remainder of a divided by b."""
+    if b == 0:
+        raise ValueError("Cannot modulo by zero")
+    return a % b
     result = a / b
     return result
 
