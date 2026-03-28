@@ -65,10 +65,16 @@ Here I learned how to rebase my feature branch
 - git rebase main
 - git push --force-with-lease origin feature/bx79
 
+Here I learned how to perform rebasing which allows for linearizing history and helping it be more readable.
+
 ## Checkpoint 6
 
 - git log main..HEAD --oneline
 - git rebase -i HEAD~5
 - git push --force-with-lease
 
+Here I learned how to use interactive rebasing to edit commit history, allowing me to make it more legible.
+
 ## Checkpoint 7
+
+Here I learned about how to make pull requests and how to interact with other people's pull requests which is needed to coordinate group work.
